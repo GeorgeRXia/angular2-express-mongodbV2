@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    <button md-button [mdMenuTriggerFor]="menu">Links</button>
+<md-menu #menu="mdMenu">
+  <div class="nav">
+    <div>
+     <a uiSref="addlist" uiSrefActive="active">addlist</a>
+   </div>
+   <div>
+     <a uiSref="viewlist" uiSrefActive="active">viewlist</a>
+  </div>
+  <div>
+     <a uiSref="chart" uiSrefActive="active">chart</a>
+  </div>
+   </div>
+
+
+</md-menu>
+  </md-sidenav>
+<md-toolbar>
+  <div class="example-sidenav-content">
+    <button type="button" md-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
+</md-toolbar>
+     <ui-view></ui-view>
+
+</md-sidenav-container>
+<div style="text-align:center">
+
+
+
+
+
+
+
+</div>
